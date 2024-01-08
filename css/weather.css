@@ -1,0 +1,32 @@
+/* nav .container a{
+    width: 10%;
+}
+
+li.nav-item{
+    margin: 15px;
+    border: 2px solid red;
+   
+} */
+
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../imges/b1d6fd2fdf10616f56a7a4ee40bc1477.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+.card1-bg{
+background-color: #323544;
+}
+.card1-header-bg{
+    background-color: #2D303D;
+}
+
+.card2-header-bg{
+    background-color: #222530
+}
+.card2-bg{
+    background-color:#262936 ;
+}

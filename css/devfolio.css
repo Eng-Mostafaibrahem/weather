@@ -1,0 +1,368 @@
+:root {
+  --main-color: #0078ff;
+}
+
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../DevFolio-images/hero-bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+/* nav */
+
+nav .nav-link {
+  position: relative;
+}
+nav .nav-link::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  left: 4px;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background-color: #f4f4f4;
+  transition: all 0.5s;
+}
+
+.navbar-dark .navbar-nav .nav-link.active::before,
+.navbar-dark .navbar-nav .nav-link:hover::before {
+  width: 80%;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: white;
+}
+
+/* end nav */
+#Home .text::after {
+  content: " |";
+  margin-left: 4px;
+  animation: typing 6s infinite;
+}
+
+@keyframes typing {
+  0% {
+    content: " D|";
+  }
+  2% {
+    content: " DE|";
+  }
+  4% {
+    content: " DES|";
+  }
+  6% {
+    content: " DESI|";
+  }
+  8% {
+    content: " DESIG|";
+  }
+  10% {
+    content: " DESIGN|";
+  }
+  12% {
+    content: " DESIGNE|";
+  }
+  14% {
+    content: " DESIGNER|";
+  }
+
+  16% {
+    content: " DESIGNER|";
+  }
+  18% {
+    content: " DESIGNE|";
+  }
+  20% {
+    content: " DESIGN|";
+  }
+  22% {
+    content: " DESIG|";
+  }
+  24% {
+    content: " DESI|";
+  }
+  26% {
+    content: " DESI|";
+  }
+  28% {
+    content: " DES|";
+  }
+  30% {
+    content: " DE|";
+  }
+  32% {
+    content: " D|";
+  }
+
+  36% {
+    content: " De|";
+  }
+  38% {
+    content: " Dev|";
+  }
+  40% {
+    content: " Deve|";
+  }
+  42% {
+    content: " Devel|";
+  }
+  44% {
+    content: " Develo|";
+  }
+  46% {
+    content: " Develop|";
+  }
+  48% {
+    content: " Develope|";
+  }
+  50% {
+    content: " Developer|";
+  }
+  54% {
+    content: " Develope|";
+  }
+  56% {
+    content: " Develop|";
+  }
+  58% {
+    content: " Develo|";
+  }
+  60% {
+    content: " Devel|";
+  }
+  62% {
+    content: " Deve|";
+  }
+  64% {
+    content: " Dev|";
+  }
+  66% {
+    content: " De|";
+  }
+  68% {
+    content: " D|";
+  }
+  68% {
+    content: " |";
+  }
+  70% {
+    content: " F|";
+  }
+  71% {
+    content: " Fr|";
+  }
+  72% {
+    content: " Fre|";
+  }
+  72% {
+    content: " Free|";
+  }
+  73% {
+    content: " Freel|";
+  }
+  74% {
+    content: " Freela|";
+  }
+  75% {
+    content: " Freelan|";
+  }
+  75% {
+    content: " Freelanc|";
+  }
+  77% {
+    content: " Freelance|";
+  }
+  78% {
+    content: " Freelancer|";
+  }
+  79% {
+    content: " Freelance|";
+  }
+
+  80% {
+    content: " Freelanc|";
+  }
+  81% {
+    content: " Freelan|";
+  }
+
+  82% {
+    content: " Freela|";
+  }
+  82% {
+    content: " Freel|";
+  }
+
+  82% {
+    content: " Free|";
+  }
+
+  83% {
+    content: " Fre|";
+  }
+  84% {
+    content: " Fr|";
+  }
+
+  86% {
+    content: " F|";
+  }
+
+  88% {
+    content: " P|";
+  }
+
+  89% {
+    content: " Ph|";
+  }
+
+  90% {
+    content: " Pho|";
+  }
+
+  91% {
+    content: " Phot|";
+  }
+
+  92% {
+    content: " Photo|";
+  }
+
+  93% {
+    content: " Photog|";
+  }
+
+  94% {
+    content: " Photogr|";
+  }
+
+  95% {
+    content: " Photogra|";
+  }
+
+  96% {
+    content: " Photograp|";
+  }
+
+  97% {
+    content: " Photograph|";
+  }
+
+  98% {
+    content: " Photographe|";
+  }
+
+  100% {
+    content: " Photographer|";
+  }
+}
+
+.section2 .container .info .pic img {
+  width: 100%;
+}
+
+.about-info h2 {
+  position: relative;
+}
+
+.about-info h2::after {
+  content: "";
+  width: 100px;
+  height: 3px;
+  background-color: var(--main-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.section3 .title p::after {
+  content: "";
+  width: 50px;
+  height: 5px;
+  background-color: var(--main-color);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* services */
+
+#services .overlay {
+  background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 181, 255, 0.9) 35%,
+      rgba(0, 120, 255, 0.9) 100%
+    ),
+    url("../DevFolio-images/post-3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 8rem;
+}
+
+#services .services-card .part:hover i {
+  color: white;
+  background-color: var(--main-color);
+  border: none;
+}
+
+#contact,
+#portofolio .overlay {
+  background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 181, 255, 0.4) 35%,
+      rgba(0, 120, 255, 0.4) 100%
+    ),
+    url("../DevFolio-images/overlay-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 8rem;
+}
+
+/* contact */
+#contact h2::after {
+  content: "";
+  width: 150px;
+  height: 3px;
+  background-color: var(--main-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+#portofolio .card .card-img {
+  overflow: hidden;
+}
+
+#portofolio .card .card-img img {
+  transition: all 0.7s;
+}
+
+#portofolio .card:hover img {
+  transform: scale(1.4);
+}
+
+#contact .touch i:hover {
+  background-color: var(--main-color);
+  color: white;
+}
