@@ -33,10 +33,7 @@ function display(response) {
     </div>
   </div>`;
 
-    //searchData(searchelement);
   }
-  //console.log(res.forecast.forecastday[0].date
-  //);
 
   cards.innerHTML = cartona;
 }
