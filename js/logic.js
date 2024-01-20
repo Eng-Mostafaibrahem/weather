@@ -1,3 +1,7 @@
+let search = document.getElementById("SearchInput");
+let cards = document.getElementById("cards");
+let data = [];
+
 function display(response) {
   let days = response.forecast.forecastday;
   let city = response.location.name;
@@ -6,19 +10,21 @@ function display(response) {
   for (let i = 0; i < days.length; i++) {
     const element = days[i];
     console.log(element);
-    let date = new Date(element.date);
-    //console.log(element.date);
+    let elementDate = new Date(element.date);
+    let elementDate2=elementDate.toString();
+    let elementDate3 = elementDate2.split(" ")
+    let date= elementDate3[2];
+    let month =elementDate3[1]
+    let day= elementDate3[0]
+
     let tempreture = element.day.maxtemp_c;
-    //console.log(element.day.maxtemp_c);
     let tempText = element.day.condition.text;
-    // console.log(element.day.condition.text);
     let img = element.day.condition.icon;
-    //console.log(element.day.condition.icon);
-    //let city=res.location.name
-    cartona += `<div class="card border-success mb-3" style="max-width: 18rem">
+    
+    cartona += `<div class= col-md-4 mt-5 mx-auto  shadow-lg border-3  my-5 text-light">
     <div class="card-header card1-header-bg text-white d-flex justify-content-between ">
-        <p class="day">day</p>
-        <p class="date">${date}</p>
+        <p class="day">${day}</p>
+        <p class="date">${date}${month}</p>
     </div>
     <div class="card-body card1-bg text-white text-center" >
       <h4>${city}</h4>
@@ -49,7 +55,7 @@ async function getData() {
   display(res);
 }
 
-search.addEventListener("blur", function (e) {
+search.addEventListener("input", function (e) {
   searchCity(e.target.value);
 });
 
