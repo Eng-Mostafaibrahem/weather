@@ -5,128 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>weather</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="css/all.min.css"> -->
     <link rel="stylesheet" href="css/weather.css" />
   </head>
   <body>
-    <!-- nav bar -->
-
-    <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark navbar-dark">
-      <div class="container">
-        <a class="" href="#"><img src="imges/logo@2x.png" alt="logo" /></a>
-        <div class="logo-text text-white ms-2">
-          <h4 class="mb-0 ms-0">weather</h4>
-          <small>tagline goes here</small>
-        </div>
+    <div class="border-opacity-100 border-end border"></div>
+    <nav class="navbar navbar-expand-lg bg-gray">
+      <div class="container my-3">
+        <img src="./imges/logo.png" alt="" class="img-fluid m-1" />
+        <a class="navbar-brand text-light" href="#">Weather</a>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-capitalize">
-            <li class="nav-item menu-item current-menu-item">
-              <a
-                class="nav-link active rounded-bill border-2 border-danger"
-                aria-current="page"
-                href="#"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">News</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Live cameras</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">photo</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">contact</a>
-            </li>
-
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </li>
-            </ul>
-          </ul>
-        </div>
-      </div>
-    </nav> -->
-
-    <!-- <div class="container">
-      <div class="d-flex justify-content-center w-50 mt-5 mx-auto">
-        <input
-          type="text"
-          placeholder="find your location..."
-          class="form-control p-2 bg-dark text-white"
-          id="search"
-        />
-        <button class="btn btn-primary">search</button>
-      </div> -->
-
-      <!-- bg-black  bg-opacity-75   bg-transparent-->
-    <!-- </div>
-    <div class="container">
-      <div class="row g-3 mt-5" id="cards">
-      </div>
-  
-    </div> -->
-
-
-
-
-
-<div class="border-opacity-100 border-end border"></div>
-<nav class="navbar navbar-expand-lg bg-gray ">
-  <div class="container my-3">
-    <img src="./imges/logo.png" alt="" class="img-fluid m-1">
-    <a class="navbar-brand text-light" href="#">Weather</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
-      <div class="navbar-nav ms-auto">
-        <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
-        <a class="nav-link text-light" href="#">News</a>
-        <a class="nav-link text-light" href="#">live cameras</a>
-        <a class="nav-link text-light" href="#">photos</a>
-        <a class="nav-link text-light" href="#">contact</a>
-      </div>
-    </div>
-  </div>
-</nav>
-<datagrid class=""></datagrid>
-
-
-<!-- section two -->
-<section class="section-two pt-5">
-    <div class="container">
-        <div class="searchinput d-flex mb-5 ">
-                 <input class="form-control me-2" id="SearchInput" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn  btn-outline-info bg-primary m-1 text-white" type="submit">Find</button>
-
-        </div>
-        <div class="container">
-          <div class="row gy-5" id="cards">  
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link active text-light" aria-current="page" href="#"
+              >Home</a
+            >
+            <a class="nav-link text-light" href="#">News</a>
+            <a class="nav-link text-light" href="#">live cameras</a>
+            <a class="nav-link text-light" href="#">photos</a>
+            <a class="nav-link text-light" href="#">contact</a>
           </div>
         </div>
+      </div>
+    </nav>
+    <datagrid class=""></datagrid>
 
+    <!-- section two -->
+    <section class="section-two pt-5">
+      <div class="container">
+        <div class="searchinput d-flex mb-5">
+          <input
+            class="form-control me-2"
+            id="SearchInput"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button
+            class="btn btn-outline-info bg-primary m-1 text-white"
+            type="submit"
+          >
+            Find
+          </button>
+        </div>
+        <div class="container">
+          <div class="row gy-5" id="cards"></div>
+        </div>
+      </div>
+    </section>
 
+    <div class="footer mb-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 d-flex justify-content-around mt-3 ">
+            <div class="searchinput d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Enter your Email to Subscribe"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-info m-1" type="submit">
+                Subscribe
+              </button>
+            </div>
+          </div>
+          <div class="icons col-md-4 mt-3">
+            <ul class="list-icon d-flex">
+              <li><i class="fa-brands fa-facebook"></i></li>
+              <li><i class="fa-brands fa-twitter"></i></li>
+              <li><i class="fa-brands fa-google-plus"></i></li>
+              <li><i class="fa-brands fa-pinterest"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-        
-</section>
 
-    
+    <script
+      src="https://kit.fontawesome.com/1ff103a32c.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/logic.js"></script>
   </body>

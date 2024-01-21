@@ -10,7 +10,7 @@
 }
 
 
-body{
+.section-two{
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("../imges/b1d6fd2fdf10616f56a7a4ee40bc1477.jpg");
   background-position: center center;
@@ -31,4 +31,32 @@ background-color: #323544;
 }
 .card2-bg{
     background-color:#262936 ;
+}
+
+i{
+    font-size: 34px;
+    margin: 10px ;
+    color:#d0d2d8;
+
+}
+i:hover{
+    color: #009AD8;
+}
+.list-icon{
+list-style: none;
+
+
+}
+.list-icon i{
+    border: 2px solid black;
+    border-radius: 50%;
+}
+footer{
+    background-color: #262936;
+}
+body{
+    background-color: #262936 !important;   
+}
+.border-color{
+    border-color: #262936 !important;
 }
