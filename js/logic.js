@@ -9,7 +9,6 @@ function display(response) {
 
   for (let i = 0; i < days.length; i++) {
     const element = days[i];
-    console.log(element);
     let elementDate = new Date(element.date);
     let elementDate2=elementDate.toString();
     let elementDate3 = elementDate2.split(" ")
@@ -21,7 +20,7 @@ function display(response) {
     let tempText = element.day.condition.text;
     let img = element.day.condition.icon;
     
-    cartona += `<div class= col-md-4 mt-5 mx-auto  shadow-lg border-3  my-5 text-light">
+    cartona += `<div class= col-md-4 mt-5 mx-auto  shadow-lg border-3  my-5 p-4 rounded text-light">
     <div class="card-header card1-header-bg text-white d-flex justify-content-between ">
         <p class="day">${day}</p>
         <p class="date">${date}${month}</p>
@@ -30,7 +29,7 @@ function display(response) {
       <h4>${city}</h4>
 
       <h2 class="card-title d-inline-block">${tempreture} C</h2>
-      <img src = ${img}></img>
+      <img src = "${img}" alt="icon describe weather"></img>
       <p class="card-text">
         ${tempText}
       </p>
@@ -50,8 +49,6 @@ async function getData() {
   );
 
   let res = await data.json();
-  console.log(res.location.name);
-
   display(res);
 }
 
@@ -65,7 +62,6 @@ async function searchCity(element) {
   );
 
   let res = await data.json();
-
   display(res);
 }
 
